@@ -1,19 +1,24 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,500);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,500);
 
 $primary: #20d3b0;
+$secondary: #6C91C2;
+
 $font-family-sans-serif: "Open Sans", -apple-system, system-ui, sans-serif !default;
 
 @import "~bootstrap/scss/bootstrap";
 
 body{
-  background-color: #eee;
-  color: $gray-800;
+  color: $gray-100;
+  background-color: #212738;
   font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 .app {
   > header {
-    border-bottom: 1px solid $primary;
     margin-bottom: 2rem;
 
     > .logo {
@@ -21,38 +26,18 @@ body{
     }
 
     > nav {
-      justify-content: center;
-
       .nav-link {
-        border-bottom: .2rem solid transparent;
-        color: $gray-800;
-        font-weight: 700;
-        padding: .2rem 0;
+        color: $gray-100;
+        padding: 0;
 
         &:hover {
-          border-bottom-color: $gray-600;
+          color: $primary;
         }
 
-        + .nav-link {
+        + * {
           margin-left: 1rem;
-        }
-
-        &.active {
-          border-bottom-color: $primary;
         }
       }
     }
   }
 }
-
-/*
-
-
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  {
-    float: right;
-  }
-}*/

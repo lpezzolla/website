@@ -3,12 +3,13 @@ import ReactDOM from "react-dom"
 import App from "./App"
 import reportWebVitals from "./reportWebVitals"
 import ReactGA from "react-ga4"
-
-ReactGA.initialize("G-FX35BPVGYG");
+import {BrowserRouter as Router} from "react-router-dom"
 
 ReactDOM.render(
     <React.StrictMode>
+        <Router>
         <App/>
+        </Router>
     </React.StrictMode>,
     document.getElementById("root")
 )
